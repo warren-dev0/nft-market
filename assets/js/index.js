@@ -4,6 +4,7 @@
 
 const eyeButton = document.querySelector('#eye-icon');
 const eyeIcon = document.querySelector('#eye-icon i');
+const eyeIcon2 = document.querySelectorAll('#eye-icon i');
 const passInput = document.querySelector('#password');
 
 eyeButton.addEventListener('click', () => {

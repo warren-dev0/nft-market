@@ -557,6 +557,7 @@ h5 {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
+  align-items: center;
   padding: 0 var(--input-padding-x);
   height: 46px;
   background-color: #FFFFFF;
@@ -1231,6 +1232,71 @@ section, footer {
   }
   .subscribe-section .subscribe-form button:hover {
     color: #A259FF;
+  }
+}
+
+:root {
+  --info-padding-x: 2rem;
+  --info-padding-y: 2rem;
+}
+
+.create-account-container {
+  display: grid;
+  grid-template-areas: "picture" "info";
+  grid-template-columns: auto;
+  gap: 2rem;
+  color: #FFFFFF;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  width: 100vw;
+}
+@media (min-width: 768px) {
+  .create-account-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "picture info";
+    gap: 0;
+  }
+}
+.create-account-container .account-picture {
+  grid-area: picture;
+  background-image: url("/assets/img/create-account-page/main-image.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 232px;
+}
+.create-account-container .account-info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 var(--info-padding-x);
+}
+@media (min-width: 768px) {
+  .create-account-container .account-info {
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .create-account-container .account-info {
+    width: 75%;
+  }
+}
+.create-account-container .account-info .account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 992px) {
+  .create-account-container .account-info .account-form {
+    width: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .create-account-container .account-info button[type=submit] {
+    width: 75%;
   }
 }
 
