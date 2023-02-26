@@ -1051,7 +1051,7 @@ section, footer {
 
 .highlight-section {
   display: grid;
-  background-image: url("/assets/img/highlight-section/mobile-image.svg");
+  background-image: url("/assets/img/highlight-section/mobile-image.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1073,7 +1073,7 @@ section, footer {
 }
 @media (min-width: 768px) {
   .highlight-section {
-    background-image: url("/assets/img/highlight-section/tablet-image.svg");
+    background-image: url("/assets/img/highlight-section/tablet-image.webp");
     grid-template-areas: "avatar timer" "title timer" "cta timer";
     align-content: flex-end;
     align-items: flex-end;
@@ -1081,7 +1081,7 @@ section, footer {
 }
 @media (min-width: 992px) {
   .highlight-section {
-    background-image: url("/assets/img/highlight-section/desktop-image.svg");
+    background-image: url("/assets/img/highlight-section/desktop-image.webp");
   }
 }
 .highlight-section::before {
@@ -1187,14 +1187,14 @@ section, footer {
 .subscribe-section .subscribe-image {
   grid-area: image;
   border-radius: 20px;
-  background: url("/assets/img/subscribe-widget/astronaut.svg") center no-repeat;
+  background: url("/assets/img/subscribe-widget/astronaut.webp") center no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 255px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .subscribe-section .subscribe-image {
-    background: url("/assets/img/subscribe-widget/astronaut-tablet.svg") center no-repeat;
+    background: url("/assets/img/subscribe-widget/astronaut-tablet.webp") center no-repeat;
   }
 }
 .subscribe-section .subscribe-info {
