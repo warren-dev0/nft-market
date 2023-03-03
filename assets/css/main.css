@@ -92,8 +92,8 @@ h5 {
 .nav-bar .navbar-container .navbar-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-around;
   position: fixed;
   right: 0;
   top: 0;
