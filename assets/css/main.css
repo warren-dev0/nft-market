@@ -283,7 +283,7 @@ h5 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 330px;
+  max-width: 330px;
   color: #FFFFFF;
   font-family: "Work Sans", sans-serif;
 }
@@ -661,6 +661,10 @@ section, footer {
   overflow-x: hidden;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section-hero {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
@@ -974,9 +978,14 @@ section, footer {
 }
 .category-section .categories-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-items: center;
   gap: 1rem;
+}
+@media (min-width: 576px) {
+  .category-section .categories-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (min-width: 992px) {
   .category-section .categories-container {
