@@ -1,17 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main.css" />
     <title>Create Account</title>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <body>
+
+    <header class="nav-bar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="/index.html" class="brand-title">
+            <i class="fa-sharp fa-solid fa-store"></i>
+            <h5>NFT Marketplace</h5>
+          </a>
+
+          <button
+            id="navbar-toogle"
+            data-toogle="navbar"
+            aria-expanded="false"
+            class="navbar-toogle"
+          >
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
+        </div>
+
+        <nav id="navbar" visible="false" class="navbar-body">
+          <ul class="navbar-list">
+            <li class="navbar-item"><a href="./marketplace.html">Marketplace</a></li>
+            <li class="navbar-item"><a href="./rankings.html">Rankings</a></li>
+            <li class="navbar-item"><a href="#">Connect a wallet</a></li>
+          </ul>
+
+          <div class="cta">
+            <a href="./create-account.html" class="btn btn-md fill">
+              <i class="fa-regular fa-user"></i>
+              Sign Up
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="connect-wallet-container">
+
+      <div class="connect-picture" name="main connect image"></div>
+
+      <div class="connect-info">
+        <h2>Connect Wallet</h2>
+        <p>
+          Choose a wallet you want to connect. There are several wallet providers.
+        </p>
+        <div class="ways-container">
+          <button id="metamask" class="btn-wallet">
+            <figure>
+              <img src="../img/components/crypto/metamask.svg" alt="metamask icon">
+            </figure>
+            <h5>Metamask</h5>
+          </button>
+
+          <button id="metamask" class="btn-wallet">
+            <figure>
+              <img src="../img/components/crypto/wallet.svg" alt="metamask icon">
+            </figure>
+            <h5>Wallet Connect</h5>
+          </button>
+
+          <button id="metamask" class="btn-wallet">
+            <figure>
+              <img src="../img/components/crypto/coinbase.svg" alt="metamask icon">
+            </figure>
+            <h5>Coinbase</h5>
+          </button>
+        </div>
+     </div>
+    </div>
+
+    <footer class="footer-section">
+      <div class="footer-nft">
+        <a href="/index.html" class="title">
+          <i class="fa-sharp fa-solid fa-store"></i>
+          <h5>NFT Marketplace</h5>
+        </a>
+        <div class="info">
+          <p>NFT marketplace UI created with Anima for Figma.</p>
+          <div class="comunity">
+            <span>Join our community</span>
+            <div class="social-media">
+              <a href="#"><i class="fa-brands fa-discord"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-explore">
+        <h5>Explore</h5>
+
+        <a href="./marketplace.html">Marketplace</a>
+        <a href="./rankings.html">Rankings</a>
+        <a href="#">Connect a wallet</a>
+      </div>
+      <div class="footer-join">
+        <h5>Join Our Weekly Digest</h5>
+        <p>Get exclusive promotions & updates straight to your inbox.</p>
+        <div class="join-form">
+          <div class="input-container">
+            <input
+              type="text"
+              id="text"
+              name="text"
+              placeholder="Enter your email here"
+            />
+          </div>
+          <button class="btn btn-sm fill">
+            <i class="fa-solid fa-envelope"></i>
+            Subscribe
+          </button>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <hr />
+        <span class="caption">Ⓒ NFT Market. Use this template freely.</span>
+      </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/navbar.js"></script>
+  </body>
 </html>
